@@ -1,7 +1,8 @@
 {
+  "homepage": "http://r-abinaya.github.io/Blog-App",
   "name": "my-app",
   "version": "0.1.0",
-  "proxy":"http://localhost:4040/api/transactions",
+  "proxy": "http://localhost:4040/api/transactions",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
@@ -19,6 +20,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -40,5 +43,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.0.0"
   }
 }
